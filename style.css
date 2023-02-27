@@ -1,6 +1,20 @@
 /* Importação de fonte via Google Fonts --------- */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
+:root {
+    --cerise-color: #DB1E8C;
+
+    --carnation-color: #FF97D3;
+
+    --pickled-bluewood-color: #33475B;
+
+    --white-color: #FFFFFF;
+
+    --cornflower-color: #264FEC;
+
+    --titulo-azul: #00e;
+}
+
 /* Reset básico --------- */
 * {
     margin: 0;
@@ -10,14 +24,14 @@
 
 /* Body --------- */
 body {
-    background-color: #33475B;
+    background-color: var(--pickled-bluewood-color);
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
 /* Header --------- */
 header {
     height: 80px;
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     display: flex;
 }
 
@@ -31,12 +45,12 @@ header {
 
 .titulo-principal {
     font-size: 24px;
-    color: #0000EE;
+    color: var(--titulo-azul);
     font-weight: 400;
 }
 
 .label-pesquisa {
-    background-color: #DB1E8C;
+    background-color: var(--cerise-color);
     height: 40px;
     padding: 8px;
     display: flex;
@@ -52,28 +66,55 @@ header {
 }
 
 ::placeholder {
-    color: #FF97D3;
+    color: var(--carnation-color);
 }
 
-.container-elementos-main {    
-    flex-wrap: wrap ;
+.container-elementos-main {
+    flex-wrap: wrap;
     width: 1280px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.container-elementos-box {    
+
+.container-elementos-box {
+    display: flex;
+    flex-direction: column;
     height: 444.74px;
     width: 400px;
     background-color: #F5F5F5;
     border-radius: 4%;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-right: 20px;
     padding-left: 20px;
-    margin: 0 auto;
+    margin-bottom: 1%;
 }
 
 .container-elementos-box p button h2 {
     font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container-elementos-box h1 {
+    font-weight: 600;
+    font-size: 24px;
+    
+    color: #00e;
+}
+
+.container-elementos-box p {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 8px;
+    
+}
+
+.container-elementos-box button {
+    border-radius: 4px;
+    border-color: var(--cornflower-color) ;
+    color: var(--cornflower-color);
+    background-color: transparent;
+    width: 138.77px;
+    height: 47.88px;
+    margin-bottom: 32px;
 }
