@@ -69,7 +69,55 @@ header {
     color: var(--carnation-color);
 }
 
-.container-elementos-main {
+/* trilhas */
+
+.container-trilhas {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.trilha {
+    width: calc((100%-64px)/3);
+    background-color: #FFFFFF;
+    padding: 32px 32px 96px; /*86 = 32 + 54 da ementa, + 10 só para não ficar muito grudado*/
+    position: relative;
+}
+
+.titulo-trilha {
+    color:#364372;
+    margin-bottom: 24px;
+}
+
+.paragrafo-trilha {
+    margin-bottom: 16px;
+}
+
+.link-ementa {
+    text-decoration: none;
+    border: 1px solid #264fec;
+    border-radius: 4px;
+    padding: 16px;
+    width: 160px;
+    height: 54px;
+    color: #264FEC;
+    transition: all .5s;
+    position: absolute;
+    bottom: 32px;
+    text-align: center;
+}
+
+.link-ementa:hover {
+    background-color: #264FEC;
+    color: #FFFFFF;
+    border-color: #0000d6;
+
+}
+
+/* .container-elementos-main {
     flex-wrap: wrap;
     width: 1280px;
     margin: 0 auto;
@@ -117,4 +165,4 @@ header {
     width: 138.77px;
     height: 47.88px;
     margin-bottom: 32px;
-}
+} */
